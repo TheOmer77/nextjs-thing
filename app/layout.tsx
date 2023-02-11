@@ -1,18 +1,27 @@
-import './globals.css'
+import Nav from "@/src/components/Nav";
+import { Inter } from "@next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+import "./globals.css";
+
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
       {/*
         <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
+        head.tsx. 
       */}
       <head />
-      <body>{children}</body>
+      <body className={inter.className}>
+        <Nav />
+        {children}
+      </body>
     </html>
-  )
-}
+  );
+};
+
+export default RootLayout;
