@@ -18,10 +18,6 @@ interface RootLayoutProps {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" className={font.variable}>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. 
-      */}
       <head />
       <body>
         <Nav />
