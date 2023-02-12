@@ -1,6 +1,8 @@
+import { Figtree } from "@next/font/google";
+
 import Nav from "@/components/Nav";
-import { Inter } from "@next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+
+const font = Figtree({ subsets: ["latin"] });
 
 import "./globals.css";
 
@@ -16,7 +18,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         head.tsx. 
       */}
       <head />
-      <body className={inter.className}>
+      <body className={font.className}>
         <Nav />
         {children}
       </body>
