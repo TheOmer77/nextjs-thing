@@ -1,4 +1,4 @@
-import Nav from "@/src/components/Nav";
+import Nav from "@/components/Nav";
 import { Inter } from "@next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
