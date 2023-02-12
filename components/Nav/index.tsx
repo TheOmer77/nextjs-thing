@@ -1,12 +1,10 @@
 import Link from "next/link";
 
-import classes from "./index.module.css";
-
 const Nav = () => {
   return (
-    <nav className={classes["app-nav"]}>
-      <h1 className={classes.logo}>NextJS thing</h1>
-      <ul className={classes["nav-links"]}>
+    <nav className="flex flex-row justify-between bg-slate-50 px-8 py-4 align-middle">
+      <h1 className="text-xl font-medium">NextJS thing</h1>
+      <ul className="flex list-none flex-row gap-4">
         <li>
           <Link href="/">Home</Link>
         </li>
