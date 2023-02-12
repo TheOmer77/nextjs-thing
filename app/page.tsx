@@ -7,7 +7,7 @@ const Home = async () => {
   }).then((res) => res.json());
 
   return (
-    <main>
+    <>
       <h1 className="text-5xl font-bold">Hello world! 👋🏻</h1>
       {photos.map((photo) => (
         <img
@@ -16,7 +16,7 @@ const Home = async () => {
           alt={photo.description || photo.alt_description}
         />
       ))}
-    </main>
+    </>
   );
 };
 
