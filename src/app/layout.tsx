@@ -1,6 +1,6 @@
 import { Figtree } from "@next/font/google";
 
-import Nav from "@/components/Nav";
+import Nav from "components/Nav";
 
 const font = Figtree({
   subsets: ["latin"],
