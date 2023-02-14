@@ -11,7 +11,7 @@ const Home = async () => {
 
   return (
     <>
-      <h1 className="mb-8 mt-4 text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+      <h1 className="mb-4 mt-4 text-4xl font-bold sm:text-5xl md:mb-6 md:text-6xl lg:mb-8 lg:text-7xl">
         Hello world! 👋🏻
       </h1>
       <div className="grid grid-cols-2 items-center justify-items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
