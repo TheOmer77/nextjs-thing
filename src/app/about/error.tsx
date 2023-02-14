@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
   return (

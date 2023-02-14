@@ -1,15 +1,15 @@
-import { Figtree } from "@next/font/google";
+import { Figtree } from '@next/font/google';
 
-import Nav from "components/Nav";
+import Nav from 'components/Nav';
 
 const font = Figtree({
-  subsets: ["latin"],
-  weight: "variable",
-  variable: "--font-family",
-  fallback: ["sans-serif"],
+  subsets: ['latin'],
+  weight: 'variable',
+  variable: '--font-family',
+  fallback: ['sans-serif'],
 });
 
-import "./globals.css";
+import './globals.css';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -17,11 +17,11 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <html lang="en" className={font.variable}>
+    <html lang='en' className={font.variable}>
       <head />
       <body>
         <Nav />
-        <main className="mx-auto max-w-6xl p-4 sm:px-6 md:px-8">
+        <main className='mx-auto max-w-6xl p-4 sm:px-6 md:px-8'>
           {children}
         </main>
       </body>
