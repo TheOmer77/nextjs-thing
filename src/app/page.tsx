@@ -2,7 +2,7 @@ import PhotoGrid from 'components/PhotoGrid';
 import { UNSPLASH_BASE_URL, UNSPLASH_ACCESS_KEY } from 'constants/unsplash';
 import type { PhotosResponse } from 'types/unsplash';
 
-const Home = async () => {
+const HomePage = async () => {
   const photos: PhotosResponse = await fetch(
     `${UNSPLASH_BASE_URL}/photos?per_page=100`,
     {
@@ -20,4 +20,4 @@ const Home = async () => {
   );
 };
 
-export default Home;
+export default HomePage;
