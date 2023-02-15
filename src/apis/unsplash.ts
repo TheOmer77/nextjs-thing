@@ -1,5 +1,5 @@
 import { UNSPLASH_ACCESS_KEY, UNSPLASH_BASE_URL } from 'constants/unsplash';
-import type { PhotosResponse } from 'types/unsplash';
+import type { Photo } from 'types/unsplash';
 
 const unsplash = async (url: string, config?: RequestInit) =>
   await fetch(`${UNSPLASH_BASE_URL}${url}`, {
@@ -15,4 +15,4 @@ export const getPhotos = async ({
   count = 100,
 }: {
   count?: number;
-} = {}): Promise<PhotosResponse> => await unsplash(`/photos?per_page=${count}`);
+} = {}): Promise<Photo[]> => await unsplash(`/photos?per_page=${count}`);

@@ -1,12 +1,12 @@
 import classNames from 'classnames';
 import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 
-import Photo from './Photo';
-import type { PhotosResponse } from 'types/unsplash';
+import GridPhoto from './Photo';
+import type { Photo } from 'types/unsplash';
 
 interface PhotoGridProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  photos: PhotosResponse;
+  photos: Photo[];
 }
 
 const PhotoGrid = ({ photos, className, ...props }: PhotoGridProps) => {
@@ -19,11 +19,11 @@ const PhotoGrid = ({ photos, className, ...props }: PhotoGridProps) => {
       )}
     >
       {photos.map(photo => (
-        <Photo
+        <GridPhoto
           key={photo.id}
           id={photo.id}
           src={photo.urls.small}
-          alt={photo.description || photo.alt_description}
+          alt={photo.description || photo.alt_description || photo.id}
         />
       ))}
     </div>
