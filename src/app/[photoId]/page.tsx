@@ -1,3 +1,4 @@
+import { getPhotoById } from 'apis/unsplash';
 import React from 'react';
 
 const PhotoPage = async ({
@@ -5,9 +6,14 @@ const PhotoPage = async ({
 }: {
   params: { photoId: string };
 }) => {
+  const photo = await getPhotoById(photoId);
   return (
     <div>
-      <p>Photo page TBD</p>
+      <img
+        src={photo.urls.regular}
+        alt={photo.description || photo.alt_description || photo.id}
+        className='w-full rounded-2xl'
+      />
       <p>Photo ID: {photoId}</p>
     </div>
   );
