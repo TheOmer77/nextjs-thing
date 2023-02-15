@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import type { DetailedHTMLProps, ImgHTMLAttributes } from 'react';
 
-interface PhotoProps
+interface GridPhotoProps
   extends DetailedHTMLProps<
     ImgHTMLAttributes<HTMLImageElement>,
     HTMLImageElement
@@ -11,7 +11,7 @@ interface PhotoProps
   alt?: string;
 }
 
-const Photo = ({ id, src, alt, className, ...props }: PhotoProps) => (
+const GridPhoto = ({ id, src, alt, className, ...props }: GridPhotoProps) => (
   <img
     id={id}
     src={src}
@@ -24,4 +24,4 @@ const Photo = ({ id, src, alt, className, ...props }: PhotoProps) => (
   />
 );
 
-export default Photo;
+export default GridPhoto;

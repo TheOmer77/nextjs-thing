@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 
-import GridPhoto from './Photo';
+import GridPhoto from './GridPhoto';
 import type { Photo } from 'types/unsplash';
 
 interface PhotoGridProps
