@@ -1,2 +1,3 @@
 export * from './general';
-export * from './photos';
+export * from './photo';
+export * from './user';

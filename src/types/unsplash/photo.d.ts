@@ -1,5 +1,6 @@
-import type { Nullable } from '../helpers';
 import type { Entity } from './general';
+import type { BasicUser } from './user';
+import type { Nullable } from '../helpers';
 
 interface StatValue {
   value: number;
@@ -48,7 +49,7 @@ export interface BasicPhoto extends VeryBasicPhoto {
   };
   promoted_at: Nullable<string>;
   width: number;
-  user: User.Basic;
+  user: BasicUser;
 }
 
 interface PhotoWithExifAndLocation {
