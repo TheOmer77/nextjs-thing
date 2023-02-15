@@ -14,7 +14,7 @@ const PhotoGrid = ({ photos, className, ...props }: PhotoGridProps) => {
     <div
       {...props}
       className={classNames(
-        'grid grid-cols-2 items-center justify-items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5',
+        'grid grid-cols-fluid items-center justify-items-center gap-4',
         className
       )}
     >
