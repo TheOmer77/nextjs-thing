@@ -16,3 +16,6 @@ export const getPhotos = async ({
 }: {
   count?: number;
 } = {}): Promise<Photo[]> => await unsplash(`/photos?per_page=${count}`);
+
+export const getPhotoById = async (id: string): Promise<Photo> =>
+  await unsplash(`/photos/${id}`);
