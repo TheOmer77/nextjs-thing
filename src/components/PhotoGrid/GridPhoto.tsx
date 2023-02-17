@@ -13,7 +13,7 @@ interface GridPhotoProps
 }
 
 const GridPhoto = ({ id, src, alt, className, ...props }: GridPhotoProps) => (
-  <Link href={`/${id}`}>
+  <Link href={`/photo/${id}`}>
     <img
       id={id}
       src={src}
