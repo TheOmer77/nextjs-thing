@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Stuff you can do here
 
+Before you run any of these, make sure you have an .env file with an `UNSPLASH_ACCESS_KEY` variable, containing your Unsplash API access key.
+
 ### `npm run dev`
 
 Runs the development server at [http://localhost:3000](http://localhost:3000). The page auto-updates as you edit files. \
