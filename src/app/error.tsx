@@ -1,6 +1,6 @@
 'use client';
 
-import H1 from 'components/H1';
+import { H1 } from 'components/headings';
 
 const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
   return (

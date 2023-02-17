@@ -1,5 +1,5 @@
 import { getPhotos } from 'apis/unsplash';
-import H1 from 'components/H1';
+import { H1 } from 'components/headings';
 import PhotoGrid from 'components/PhotoGrid';
 import { UNSPLASH_BASE_URL, UNSPLASH_ACCESS_KEY } from 'constants/unsplash';
 

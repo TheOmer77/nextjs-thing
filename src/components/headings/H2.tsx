@@ -8,11 +8,8 @@ const H1 = ({
   HTMLAttributes<HTMLHeadingElement>,
   HTMLHeadingElement
 >) => (
-  <h1
-    className={classNames(
-      'mb-4 mt-4 text-4xl font-bold sm:text-5xl md:mb-6 md:text-6xl lg:mb-8 lg:text-7xl',
-      className
-    )}
+  <h2
+    className={classNames('my-4 mt-4 text-xl font-bold', className)}
     {...props}
   />
 );
