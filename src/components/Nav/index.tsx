@@ -10,7 +10,7 @@ const Nav = ({
     <>
       <nav
         className={classNames(
-          'fixed z-10 flex h-16 w-full flex-row items-center justify-between bg-slate-50 px-8 align-middle',
+          'fixed z-10 flex h-16 w-full flex-row items-center justify-between bg-slate-50 px-8 align-middle text-slate-900',
           className
         )}
         {...props}

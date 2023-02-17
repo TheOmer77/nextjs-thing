@@ -21,7 +21,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       <head />
       <body>
         <Nav />
-        <main className='mx-auto max-w-6xl p-4 sm:px-6 md:px-8'>
+        <main className='mx-auto max-w-6xl p-4 text-slate-900 sm:px-6 md:px-8'>
           {children}
         </main>
       </body>

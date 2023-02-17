@@ -18,7 +18,7 @@ const PhotoPage = async ({
         height={photo.height}
         className='absolute left-0 right-0 top-0 h-96 w-full bg-slate-50 object-contain pt-16 sm:h-[32rem] md:h-[36rem] lg:h-[40rem]'
       />
-      <div className='mt-80 text-slate-900 lg:mt-[36rem]'>
+      <div className='mt-80 lg:mt-[36rem]'>
         <p className='text-xl font-bold'>
           {photo.description || photo.alt_description || 'Untitled photo'}
         </p>
