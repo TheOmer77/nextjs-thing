@@ -1,4 +1,5 @@
 import { getPhotos } from 'apis/unsplash';
+import H1 from 'components/H1';
 import PhotoGrid from 'components/PhotoGrid';
 import { UNSPLASH_BASE_URL, UNSPLASH_ACCESS_KEY } from 'constants/unsplash';
 
@@ -7,9 +8,7 @@ const HomePage = async () => {
 
   return (
     <>
-      <h1 className='mb-4 mt-4 text-4xl font-bold sm:text-5xl md:mb-6 md:text-6xl lg:mb-8 lg:text-7xl'>
-        Hello world! 👋🏻
-      </h1>
+      <H1>Hello world! 👋🏻</H1>
       <PhotoGrid photos={photos} />
     </>
   );

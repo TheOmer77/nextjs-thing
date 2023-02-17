@@ -1,11 +1,9 @@
-import React from 'react';
+import H1 from 'components/H1';
 
 const About = () => {
   return (
     <>
-      <h1 className='mb-4 mt-4 text-4xl font-bold sm:text-5xl md:mb-6 md:text-6xl lg:mb-8 lg:text-7xl'>
-        About
-      </h1>
+      <H1>About</H1>
       <p>ABOUT PAGE!!!!!!!!!!!11</p>
     </>
   );
