@@ -12,6 +12,7 @@ const PhotoPage = async ({
   return (
     <>
       <Image
+        priority
         src={photo.urls.full}
         alt={photo.description || photo.alt_description || photo.id}
         width={photo.width}
