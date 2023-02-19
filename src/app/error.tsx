@@ -11,7 +11,7 @@ const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
         Try again
       </button>
       <H2>Error details</H2>
-      <pre>{error.stack}</pre>
+      <pre className='whitespace-pre-wrap'>{error.stack}</pre>
     </div>
   );
 };
